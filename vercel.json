@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/strong.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/strong.py"
+    }
+  ]
+}
